@@ -1,0 +1,14 @@
+version: "3.3"
+
+services:
+  api:
+    image: ricardomaximino/google-try:1
+    container_name: google-try
+    build:
+      context: ../
+      dockerfile: ./docker/Dockerfile
+      args:
+        version: 1
+        name: google-try
+    ports:
+      - 9898:8080
