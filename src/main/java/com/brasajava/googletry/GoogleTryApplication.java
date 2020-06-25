@@ -5,14 +5,13 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.data.annotation.Id;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.rest.core.annotation.RepositoryRestResource;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
-import java.time.LocalDate;
+import javax.persistence.Id;
 
 @SpringBootApplication
 public class GoogleTryApplication {
