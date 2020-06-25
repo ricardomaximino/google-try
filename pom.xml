@@ -58,6 +58,26 @@
 		<finalName>${project.artifactId}-${project.version}</finalName>
 		<plugins>
 			<plugin>
+				<groupId>com.google.cloud.tools</groupId>
+				<artifactId>jib-maven-plugin</artifactId>
+				<version>2.4.0</version>
+				<configuration>
+					<to>
+<!--						<image>registry.hub.docker.com/ricardomaximino/google-try</image>-->
+						<image>gcr.io/brasajava/google-try</image>
+						<tags>
+							<tag>1</tag>
+							<tag>latest</tag>
+						</tags>
+					</to>
+					<container>
+						<environment>
+							<SERVER_PORT>8080</SERVER_PORT>
+						</environment>
+					</container>
+				</configuration>
+			</plugin>
+			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
