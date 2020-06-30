@@ -73,6 +73,8 @@
 					<container>
 						<environment>
 							<SERVER_PORT>8080</SERVER_PORT>
+							<PORT>8080</PORT>
+							<HOST>0.0.0.0</HOST>
 						</environment>
 					</container>
 				</configuration>
